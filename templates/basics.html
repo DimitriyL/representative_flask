@@ -1,0 +1,56 @@
+{% extends "root.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    {% block header %}
+    <title>Basics of Graph Databases</title>
+    {% endblock %}
+
+  </head>
+  
+  <body>
+
+    {% block jumbotron %}
+    {% endblock %}
+
+    {% block body %}
+    <h3>What is a graph database?</h3>
+    Uses graph structure to store data, in the form of nodes, edges, and properties<br>
+    Underlying structures vary between databases<br>
+    Much like relational databases, graph databases rely on a query language (e.g. Cypher) to look up information<br>
+    <br>
+    
+    <h3>Why use them at all?</h3>
+    Significantly more efficient querying process<br>
+    Links and properties thereof are stored logically within the database<br>
+    
+    <h3>Graph Database Basics</h3>
+    Data is stored in three major types of containers: nodes, edges, and properties<br>
+    
+    <h3>Nodes</h3>
+    Nodes represent “things” or “entities,” such as people, actors, movies, etc.<br>
+    Used to store all information about the entity, much like a row of data in SQLite<br>
+    Represented by colorful balls<br>
+    
+    <h3>Edges</h3>
+    Edges represent relationships between nodes<br>
+    The direction of an edge denotes how nodes relate to one another<br>
+    There can be multiple edges between nodes<br>
+    
+    <h3>Properties</h3>
+    Properties are key-value pairs that encompass the information or attributes assigned to nodes and edges<br>
+    <br>
+    In nodes: these can be basic characteristics<br>
+    In edges: these describe the nature of the relationship (e.g. Uber ratings)<br>
+    
+    <h3>Different Graph Databases and Query Languages</h3>
+    Notable databases: GraphDB, ArangoDB, Neo4j, DataStax<br>
+    Notable query languages: Cypher, Gremlin, SPARQL<br>
+    These languages are standardized among numerous databases, and are imperative for data lookup<br>
+    
+    <br>
+    {% endblock %}
+    
+  </body>
+</html>
